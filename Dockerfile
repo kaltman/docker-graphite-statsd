@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.10.2
+FROM phusion/baseimage:0.11
 
 ADD circonus.list /etc/apt/sources.list.d/circonus.list
 
