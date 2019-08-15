@@ -1,7 +1,11 @@
 #!/usr/bin/env expect
 
 set timeout -1
-spawn /opt/graphite/bin/django-admin.py createsuperuser
+spawn /usr/local/bin/manage.sh
+
+#expect "Would you like to create one now" {
+#  send "yes\r"
+#}
 
 expect "Username (leave blank to use 'root'):" {
   send "root\r"
